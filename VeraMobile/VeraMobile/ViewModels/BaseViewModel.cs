@@ -39,8 +39,8 @@ namespace VeraMobile.ViewModels
             return true;
         }
 
-        #region INotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
+        #region INotifyPropertyChanged 
+        public event PropertyChangedEventHandler PropertyChanged; 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             var changed = PropertyChanged;

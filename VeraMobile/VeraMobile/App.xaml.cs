@@ -14,7 +14,7 @@ namespace VeraMobile
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new VeraMobile.Views.Forms.LoginPage();
         }
 
         protected override void OnStart()
