@@ -60,6 +60,7 @@ namespace VeraMobile.Models
             set { this.previewImage = value; }
         }
 
+        private List<string> _previewImages = null;
         /// <summary>
         /// Gets or sets the property that has been bound with SfRotator, which displays the item images.
         /// </summary>
@@ -68,12 +69,19 @@ namespace VeraMobile.Models
         {
             get
             {
-                for (var i = 0; i < this.previewImages.Count; i++)
+
+                if (_previewImages == null)
                 {
-                    this.previewImages[i] = this.previewImages[i].Contains(App.BaseImageUrl) ? this.previewImages[i] : App.BaseImageUrl + this.previewImages[i];
+                    _previewImages = new List<string>();
+                } 
+
+
+                for (var i = 0; i < _previewImages.Count; i++)
+                {
+                    _previewImages[i] = _previewImages[i].Contains(App.BaseImageUrl) ? _previewImages[i] : App.BaseImageUrl + _previewImages[i];
                 }
 
-                return this.previewImages;
+                return _previewImages;
             }
 
             set
