@@ -8,7 +8,7 @@ namespace VeraMobile.ViewModels.Forms
     /// ViewModel for login with social icon page.
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class LoginWithSocialIconViewModel : LoginViewModel
+    public class LoginWithSocialIconViewModel : LoginPageViewModel
     {
         #region Fields
 

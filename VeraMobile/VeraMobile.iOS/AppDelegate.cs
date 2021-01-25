@@ -1,3 +1,6 @@
+using Syncfusion.XForms.iOS.BadgeView;
+using Syncfusion.XForms.iOS.Expander;
+using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.SfRating.XForms.iOS;
 using Syncfusion.XForms.iOS.ComboBox;
 using  Syncfusion.XForms.iOS.Graphics;
@@ -29,6 +32,10 @@ namespace VeraMobile.iOS
         {
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
+            SfExpanderRenderer.Init();
+            SfCheckBoxRenderer.Init();
+            SfListViewRenderer.Init();
+            SfBadgeViewRenderer.Init();
             SfRatingRenderer.Init();
             SfComboBoxRenderer.Init();
             SfGradientViewRenderer.Init();

@@ -7,7 +7,7 @@ namespace VeraMobile.ViewModels.Forms
     /// ViewModel for forgot password page.
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class ForgotPasswordViewModel : LoginViewModel
+    public class ForgotPasswordViewModel : LoginPageViewModel
     {
         #region Constructor
 

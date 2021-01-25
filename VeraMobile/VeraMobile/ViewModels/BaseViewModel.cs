@@ -35,13 +35,13 @@ namespace VeraMobile.ViewModels
 
             backingStore = value;
             onChanged?.Invoke();
-            OnPropertyChanged(propertyName);
+            NotifyPropertyChanged(propertyName);
             return true;
         }
 
         #region INotifyPropertyChanged 
         public event PropertyChangedEventHandler PropertyChanged; 
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             var changed = PropertyChanged;
             if (changed == null)
