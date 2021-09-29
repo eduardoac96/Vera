@@ -24,6 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Catalog\VivensCatalogPage.xaml.cs">
+      <DependentUpon>VivensCatalogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Forms\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -33,7 +36,7 @@
     <EmbeddedResource Update="Themes\LightTheme.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Catalog\CatalogListPage.xaml">
+    <EmbeddedResource Update="Views\Catalog\VivensCatalogPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Catalog\Styles.xaml">

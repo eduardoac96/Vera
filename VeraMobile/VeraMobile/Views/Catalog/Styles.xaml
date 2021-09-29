@@ -80,36 +80,7 @@
             Orientation="Horizontal"
             Spacing="8"
             VerticalOptions="Center">
-
-            <!--  Filter Button  -->
-            <buttons:SfButton
-                Margin="0"
-                Padding="0"
-                Command="{Binding FilterCommand}"
-                CornerRadius="4"
-                HeightRequest="32"
-                Style="{StaticResource SfButtonStyle}">
-                <buttons:SfButton.Content>
-                    <StackLayout
-                        Padding="8,5,8,6"
-                        Orientation="Horizontal"
-                        Spacing="8"
-                        VerticalOptions="Center">
-                        <Label
-                            FontFamily="{StaticResource FontIcons}"
-                            FontSize="18"
-                            Style="{StaticResource OptionButtonLabelStyle}"
-                            Text="{StaticResource Filter}"
-                            VerticalTextAlignment="End" />
-                        <Label
-                            FontFamily="{StaticResource Montserrat-SemiBold}"
-                            Style="{StaticResource OptionButtonLabelStyle}"
-                            Text="Filter"
-                            VerticalTextAlignment="Center" />
-                    </StackLayout>
-                </buttons:SfButton.Content>
-            </buttons:SfButton>
-
+  
             <!--  Sort Button  -->
             <buttons:SfButton
                 Command="{Binding SortCommand}"

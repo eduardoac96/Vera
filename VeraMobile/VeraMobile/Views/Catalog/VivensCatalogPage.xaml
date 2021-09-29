@@ -42,7 +42,7 @@
             </Grid.RowDefinitions>
 
             <!--  Title View  -->
-            <controls:TitleView Title="Dress" Grid.Row="0">
+            <controls:TitleView Title="Inmuebles en Renta" Grid.Row="0">
                 <controls:TitleView.TrailingView>
                     <StackLayout HorizontalOptions="End" Orientation="Horizontal">
                         <badge:SfBadgeView
@@ -54,11 +54,32 @@
                             VerticalOptions="Center"
                             WidthRequest="40">
                             <badge:SfBadgeView.Content>
-                                <buttons:SfButton
-                                    Command="{Binding Path=BindingContext.CardItemCommand, Source={x:Reference ListViewList}}"
-                                    CornerRadius="4"
-                                    Style="{StaticResource IconButtonStyle}"
-                                    Text="{StaticResource Cart}" />
+
+                                <!--  Filter Button  -->
+            <buttons:SfButton
+                Margin="0"
+                Padding="0"
+                Command="{Binding FilterCommand}"
+                CornerRadius="4"
+                HeightRequest="32"
+                Style="{StaticResource SfButtonStyle}">
+                                <buttons:SfButton.Content>
+                                        <StackLayout
+                                            Padding="8,5,8,6"
+                                            Orientation="Horizontal"
+                                            Spacing="8"
+                                            VerticalOptions="Center">
+                                        <Label
+                                            FontFamily="{StaticResource FontIcons}"
+                                            FontSize="18"
+                                            Style="{StaticResource OptionButtonLabelStyle}"
+                                            Text="{StaticResource Filter}"
+                                            VerticalTextAlignment="End" />
+                                        
+                                        </StackLayout>
+                                    </buttons:SfButton.Content>
+                                </buttons:SfButton>
+ 
                             </badge:SfBadgeView.Content>
                             <badge:SfBadgeView.BadgeSettings>
                                 <badge:BadgeSetting
