@@ -20,7 +20,7 @@ namespace VeraWeb
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<CreativeTim.Argon.DotNetCore.Free.Startup>();
                 });
     }
 }
