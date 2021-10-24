@@ -22388,7 +22388,9 @@ textarea[resize='horizontal']
     transition-delay: .15s; 
 
     border: 0 solid;
-    border-radius: 2rem;
+/*    border-radius: 2rem;
+*/
+
 }
 @media (prefers-reduced-motion: reduce)
 {
@@ -22407,7 +22409,7 @@ textarea[resize='horizontal']
 
 .navbar-search .form-control
 {
-    width: 380px;
+    width: 100%;
 
     transition: all .15s cubic-bezier(.68, -.55, .265, 1.55); 
 

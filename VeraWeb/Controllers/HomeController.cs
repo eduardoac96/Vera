@@ -39,6 +39,12 @@ namespace CreativeTim.Argon.DotNetCore.Free.Controllers
             return View();
         }
 
+        [HttpGet("/list")]
+        public IActionResult List()
+        {
+            return View();
+        }
+
         [HttpGet("/icons")]
         public IActionResult Icons()
         {

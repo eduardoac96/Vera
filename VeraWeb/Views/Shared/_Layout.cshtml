@@ -18,28 +18,27 @@
             <div class="container-fluid">
                 <div class="header-body">
                     <!-- 1st Row: Crumbs and filters -->
-                    <div class="row align-items-center py-4">
-                        <div class="col-lg-3 col-3">
-                            <div class="input-field col">
-                                <select>
-                                    <option value="" disabled selected>Selecciona su opcion</option>
-                                    <option value="1">Casa</option>
-                                    <option value="2">Departamento</option>
-                                    <option value="3">Loft</option>
-                                </select> 
-                            </div>
-                        </div>
+                    <div class="row align-items-center py-5">
+                        @*<form class="form-inline col-lg-12 col-12">*@ 
+                                <div class="col-lg-3 col-3 dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Selecciona su opcion
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Casa</a>
+                                        <a class="dropdown-item" href="#">Departamento</a>
+                                        <a class="dropdown-item" href="#">Loft</a>
+                                    </div>
+                                </div>
 
-                        <div class="col-lg-5 col-5">
-                            @RenderSection("Search", required: false)
-                        </div>
-                        <div class="col-lg-1 col-1">
+                                <div class="col-lg-5 col-5">
+                                    @RenderSection("Search", required: false)
+                                </div>
 
-                        </div>
-
-                        <div class="col-lg-3 col-3">
-                            <a href="#" class="btn btn-md btn-neutral">Buscar mi propiedad</a>
-                        </div>
+                                <div class="col-lg-3 col-3">
+                                    <a href="#" class="btn btn-md btn-neutral">Buscar mi propiedad</a>
+                                </div>
+                        @*</form>*@                      
                     </div>
                     @RenderSection("DashboardCards", required: false)
                 </div>
