@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyMaterialModule } from './material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponentComponent } from './components/footer-component/footer-component.component';
+import { BodyComponentComponent } from './components/body-component/body-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponentComponent,
+    BodyComponentComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule,
     NoopAnimationsModule,
     FormsModule,
