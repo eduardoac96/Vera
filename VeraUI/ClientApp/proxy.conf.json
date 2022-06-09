@@ -1,0 +1,10 @@
+{
+
+
+  "/api/RealState/GetRealStateTypes": {
+    "target": "https//localhost:44309",
+    "secure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
