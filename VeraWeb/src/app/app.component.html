@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-light   fixed-top wt-border">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Vera</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto navbar-right">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="/realstate">Inmuebles en Venta</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="/realstate">Inmuebles en Renta</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger">Invertir</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" routerLink="/register">Publicar</a></li> 
+        
+        <li class="nav-item"><a class="nav-link" mat-button routerLink="/register">Ingresar </a></li> 
+      </ul>
+    </div>
+  </div>
+</nav><!-- Navbar End -->
+
+
+<div *ngIf="router.url === '/'">
+  <div id="main" class="main">
+    <app-body-component></app-body-component>
+  
+    <app-footer-component></app-footer-component>
+  </div> <!-- Main -->
+  
+</div>
+
+<router-outlet></router-outlet>
