@@ -9,12 +9,16 @@ import { MyMaterialModule } from './material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponentComponent } from './components/footer-component/footer-component.component';
 import { BodyComponentComponent } from './components/body-component/body-component.component';
+import { SearchComponentComponent } from './components/search-component/search-component.component';
+import { SearchOptionsComponent } from './components/search-options/search-options.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponentComponent,
-    BodyComponentComponent
+    BodyComponentComponent,
+    SearchComponentComponent,
+    SearchOptionsComponent
   ],
   imports: [ 
     BrowserModule,

@@ -7,14 +7,16 @@
 
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        // background-size: cover;
+        max-height: 500px;
 }
 .search-form{
-    background: rgba(255, 255, 255, 0.58);
-}
+    background: rgba(255, 255, 255, 0.938);
+    border-radius: 10px;
+ }
 .siyah-cerceve{
     -webkit-text-fill-color: whitesmoke; 
-}
+} 
 
 .btn-search{
     margin: 0 !important;

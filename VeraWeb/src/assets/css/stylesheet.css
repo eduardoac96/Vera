@@ -232,7 +232,7 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #8a8a8a;
+  color: #23aa7d;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
@@ -521,11 +521,19 @@ body {
 	.cat2 h2 {
 		font-size: 24px;
 		font-weight: 800;
-		color: #383B61;
+		color: #383B61 !important;
 		line-height: 1.2;
 		margin-top: 15px;
 	}
 
+	.cat2h2
+	{
+		font-size: 24px;
+		font-weight: 800;
+		color: #383B61 !important;
+		line-height: 1.2;
+		margin-top: 15px;
+	}
 	.cat2 p {
 		font-size: 16px;
 	  font-weight: 400;
@@ -545,18 +553,12 @@ body {
 		cursor: pointer;
 		text-align: left;
 	}
-
-	.cat-item.clr1 {
-		background: #f6eedf;
-		background: #fff2e5;
-	}
-
-	.cat-item.clr2 {
-		background: #f8f9fa;
-	}
+ 
 
 	.cat-item.clr3 {
 		background: #f0f5f9; 
+		border-radius: 10px;
+
 	}
 
 	.cat-img img {
@@ -1235,7 +1237,7 @@ body {
 
 	#accordion .card-body {
 		padding: 30px 0;
-		background: #f0f5f9;
+		background: #ffff;
 	}
 
 	#accordion .card-body p {
@@ -1641,11 +1643,7 @@ body {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-
-	.home {
-	  padding: 150px 0 100px 0;
-	}
-
+ 
 	.home2 {
 		padding: 100px 0;
 	}
